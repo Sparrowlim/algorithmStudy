@@ -1,4 +1,4 @@
-function solution(root) {
+function solution(route) {
   let x = 0, y = 0;
   const visitedPaths = new Set();
 
@@ -9,8 +9,8 @@ function solution(root) {
     'R': [1, 0]
   };
 
-  for (let i = 0; i < root.length; i++) {
-    const direction = root[i];
+  for (let i = 0; i < route.length; i++) {
+    const direction = route[i];
     const [dx, dy] = move[direction];
     const newX = x + dx;
     const newY = y + dy;
